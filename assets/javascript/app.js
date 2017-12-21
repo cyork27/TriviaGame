@@ -52,36 +52,8 @@ var game = {
     	$('#subwrapper').append('<br><button id="end">DONE</button>')
 	},
 	done: function(){
-		$.each($('input[name="question-0]":checked'), function(){
+		$.each($("input[name='question-0']:checked"), function(){
 			if($(this).val() == questions[0].correctAnswer){
-				game.correct++;
-			} else {
-				game.incorrect++;
-			}
-		});
-		$.each($('input[name="question-1]":checked'), function(){
-			if($(this).val()==questions[1].correctAnswer){
-				game.correct++;
-			} else {
-				game.incorrect++;
-			}
-		});
-		$.each($('input[name="question-2]":checked'), function(){
-			if($(this).val()==questions[2].correctAnswer){
-				game.correct++;
-			} else {
-				game.incorrect++;
-			}
-		});
-		$.each($('input[name="question-3]":checked'), function(){
-			if($(this).val()==questions[3].correctAnswer){
-				game.correct++;
-			} else {
-				game.incorrect++;
-			}
-		});
-		$.each($('input[name="question-4]":checked'), function(){
-			if($(this).val()==questions[4].correctAnswer){
 				game.correct++;
 			} else {
 				game.incorrect++;
