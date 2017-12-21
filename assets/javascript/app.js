@@ -46,7 +46,7 @@ var game = {
 			for (var i=0;i<questions.length;i++){
 				$('#subwrapper').append('<h2>'+questions[i].question+'</h2');
 				for(var j = 0; j<questions[i].answers.length;j++){
-				$("#subwrapper").append("<input type = 'radio' name =  'question-" +i+"' value = '"+questions[i].answers[j]+" '> "+questions[i].answers[j])
+				$("#subwrapper").append("<input type = 'radio' name =  'question-" +i+"' value = '"+questions[i].answers[j]+"'> "+questions[i].answers[j])
 			}
     	}
     	$('#subwrapper').append('<br><button id="end">DONE</button>')
@@ -87,7 +87,7 @@ var game = {
 				game.incorrect++;
 			}
 		});
-		//Game is not recording correct results
+		
 		this.result();
 	},
 	result: function(){
